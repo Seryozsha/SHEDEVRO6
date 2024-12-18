@@ -1,0 +1,171 @@
+/* Основні стилі для сайту */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 2vw 0;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 4vw;
+    margin-left: 1vw;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 2vw;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 2vw;
+    text-transform: uppercase;
+    letter-spacing: 0.1vw;
+}
+
+.hero {
+    background-color: #0077cc;
+    color: white;
+    padding: 5vw 0;
+    text-align: center;
+}
+
+.hero h2 {
+    margin-bottom: 3vw;
+    font-size: 6vw;
+}
+
+.news-section {
+    margin-top: 4vw;
+}
+
+.news-section h3 {
+    font-size: 3.5vw;
+    margin-bottom: 2vw;
+    color: #333;
+    text-align: left;
+}
+
+.news {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vw;
+}
+
+.news article {
+    background-color: white;
+    padding: 3vw;
+    width: 30%;
+    border-radius: 1vw;
+    box-shadow: 0 0 2vw rgba(0, 0, 0, 0.1);
+    margin-bottom: 4vw;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.news article:hover {
+    transform: translateY(-5px);
+}
+
+.news h1 {
+    font-size: 3.5vw;
+    color: #333;
+    margin-bottom: 2vw;
+    line-height: 1.2;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.news p {
+    font-size: 2.5vw;
+    color: #555;
+    line-height: 1.6;
+}
+
+.video-container {
+    max-width: 100%;
+    margin-top: 4vw;
+}
+
+video {
+    width: 100%;
+    border-radius: 1vw;
+    box-shadow: 0 4vw 2vw rgba(0, 0, 0, 0.2);
+}
+
+.about {
+    background-color: #f8f8f8;
+    padding: 4vw 0;
+    text-align: center;
+}
+
+.about p {
+    font-size: 2.5vw;
+    color: #666;
+    line-height: 1.6;
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 2vw 0;
+    text-align: center;
+}
+
+/* Мобільна адаптивність */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 8vw;
+        margin-left: 0;
+    }
+
+    nav ul li a {
+        font-size: 4vw;
+    }
+
+    .hero h2 {
+        font-size: 7vw;
+    }
+
+    .news {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer p {
+        font-size: 4vw;
+    }
+
+    .about p {
+        font-size: 4vw;
+    }
+}
