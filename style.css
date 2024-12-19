@@ -97,12 +97,14 @@ nav ul li a {
     line-height: 1.2;
     word-wrap: break-word;
     white-space: normal;
+    transition: all 500ms;
 }
 
 .news p {
     font-size: 2.5vw;
     color: #555;
     line-height: 1.6;
+    transition: all 500ms;
 }
 
 .video-container {
@@ -141,6 +143,7 @@ footer {
 @media (max-width: 768px) {
     .container {
         width: 90%;
+        font-size: 5vw;
     }
 
     header h1 {
@@ -168,4 +171,8 @@ footer {
     .about p {
         font-size: 4vw;
     }
+}
+
+.container h2{
+    font-size: 3vw;
 }
